@@ -52,106 +52,16 @@
 
       /* ── LAYOUT ── */
       .page-wrap {
-        display: flex;
+        display: block;
         min-height: 100vh;
       }
 
-      /* ── SIDEBAR ── */
-      .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 270px;
-        background: var(--ink);
-        color: var(--paper);
-        overflow-y: auto;
-        z-index: 100;
-        display: flex;
-        flex-direction: column;
-        border-right: 3px solid var(--blue);
-      }
-      .sidebar-logo {
-        padding: 28px 24px 20px;
-        border-bottom: 1px solid rgba(0, 71, 171, 0.25);
-      }
-      .sidebar-logo .product-name {
-        font-family: "Syne", sans-serif;
-        font-size: 1.15rem;
-        font-weight: 800;
-        color: var(--blue-light);
-        letter-spacing: 0.03em;
-        line-height: 1.2;
-      }
-      .sidebar-logo .doc-label {
-        font-family: "JetBrains Mono", monospace;
-        font-size: 0.65rem;
-        color: rgba(246, 244, 238, 0.4);
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        margin-top: 4px;
-      }
-      .sidebar-meta {
-        padding: 12px 24px 16px;
-        font-family: "JetBrains Mono", monospace;
-        font-size: 0.68rem;
-        color: rgba(246, 244, 238, 0.35);
-        border-bottom: 1px solid rgba(0, 71, 171, 0.15);
-      }
-      .sidebar-meta span {
-        display: block;
-        margin-bottom: 2px;
-      }
-      .sidebar-meta strong {
-        color: var(--blue);
+      /* ── MAIN CONTENT ── */
+      .main {
+        flex: 1;
+        width: 100%;
       }
 
-      .nav-section {
-        padding: 14px 16px 4px 24px;
-      }
-      .nav-section-label {
-        font-family: "Syne", sans-serif;
-        font-size: 0.6rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.15em;
-        color: var(--blue);
-        margin-bottom: 8px;
-      }
-      .nav-link {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 7px 10px;
-        border-radius: 5px;
-        font-family: "JetBrains Mono", monospace;
-        font-size: 0.72rem;
-        color: rgba(246, 244, 238, 0.7);
-        text-decoration: none;
-        transition: all 0.2s;
-        margin-bottom: 2px;
-        cursor: pointer;
-      }
-      .nav-link:hover,
-      .nav-link.active {
-        background: rgba(0, 71, 171, 0.15);
-        color: var(--blue-light);
-      }
-      .nav-link .num {
-        font-size: 0.6rem;
-        color: var(--blue);
-        min-width: 18px;
-        opacity: 0.7;
-      }
-      .sidebar-footer {
-        margin-top: auto;
-        padding: 16px 24px;
-        border-top: 1px solid rgba(200, 151, 42, 0.2);
-        font-family: "JetBrains Mono", monospace;
-        font-size: 0.62rem;
-        color: rgba(246, 244, 238, 0.25);
-        line-height: 1.5;
-      }
       .badge {
         display: inline-block;
         padding: 2px 8px;
@@ -164,7 +74,7 @@
       }
       .badge-gold {
         background: var(--blue);
-        color: var(--ink);
+        color: white;
       }
       .badge-teal {
         background: var(--orange-light);
@@ -173,12 +83,6 @@
       .badge-red {
         background: var(--red);
         color: white;
-      }
-
-      /* ── MAIN CONTENT ── */
-      .main {
-        margin-left: 270px;
-        flex: 1;
       }
 
       /* ── HERO ── */
@@ -290,6 +194,7 @@
       .content {
         padding: 60px 72px 80px;
         max-width: 1100px;
+        margin: 0 auto;
       }
 
       /* ── SECTION ── */
@@ -856,95 +761,6 @@
   </head>
   <body>
     <div class="page-wrap">
-      <!-- ══════════════════ SIDEBAR ══════════════════ -->
-      <aside class="sidebar">
-        <div class="sidebar-logo">
-          <div class="product-name">AOTMS LMS</div>
-          <div class="doc-label">Technical Documentation</div>
-        </div>
-        <div class="sidebar-meta">
-          <span>Classification: <strong>Internal / MNC Review</strong></span>
-          <span>Updated: <strong>May 2026</strong></span>
-        </div>
-
-        <div class="nav-section">
-          <div class="nav-section-label">Overview</div>
-          <a class="nav-link" href="#s1"
-            ><span class="num">01</span> Project Overview</a
-          >
-          <a class="nav-link" href="#s2"
-            ><span class="num">02</span> System Architecture</a
-          >
-          <a class="nav-link" href="#s3"
-            ><span class="num">03</span> Technology Stack</a
-          >
-        </div>
-        <div class="nav-section">
-          <div class="nav-section-label">Technical Design</div>
-          <a class="nav-link" href="#s4"
-            ><span class="num">04</span> Project Structure</a
-          >
-          <a class="nav-link" href="#s5"
-            ><span class="num">05</span> End-to-End Workflows</a
-          >
-          <a class="nav-link" href="#s6"
-            ><span class="num">06</span> Database Design</a
-          >
-          <a class="nav-link" href="#s7"
-            ><span class="num">07</span> API Documentation</a
-          >
-        </div>
-        <div class="nav-section">
-          <div class="nav-section-label">Quality & Scale</div>
-          <a class="nav-link" href="#s8"
-            ><span class="num">08</span> Security</a
-          >
-          <a class="nav-link" href="#s9"
-            ><span class="num">09</span> Performance</a
-          >
-          <a class="nav-link" href="#s10"
-            ><span class="num">10</span> Testing & QA</a
-          >
-          <a class="nav-link" href="#s11"
-            ><span class="num">11</span> Testing POV</a
-          >
-          <a class="nav-link" href="#s12"
-            ><span class="num">12</span> Scalability</a
-          >
-        </div>
-        <div class="nav-section">
-          <div class="nav-section-label">Module Docs</div>
-          <a class="nav-link" href="#s13"
-            ><span class="num">13</span> System Logic Flow</a
-          >
-          <a class="nav-link" href="#s14"
-            ><span class="num">14</span> Module Documentation</a
-          >
-          <a class="nav-link" href="#s15"
-            ><span class="num">15</span> n8n AI Workflows</a
-          >
-          <a class="nav-link" href="#s16"
-            ><span class="num">16</span> Visual Diagrams</a
-          >
-          <a class="nav-link" href="#s17"
-            ><span class="num">17</span> Deployment Guide</a
-          >
-          <a class="nav-link" href="#s18"
-            ><span class="num">18</span> Source Control</a
-          >
-          <a class="nav-link" href="#s19"
-            ><span class="num">19</span> QA Reports</a
-          >
-
-          <a class="nav-link" href="#s20"
-            ><span class="num">20</span> Achievements</a
-          >
-        </div>
-        <div class="sidebar-footer">
-          Prepared by Engineering Team<br />
-          AOTMS LMS — Internal Use Only
-        </div>
-      </aside>
 
       <!-- ══════════════════ MAIN ══════════════════ -->
       <main class="main">
