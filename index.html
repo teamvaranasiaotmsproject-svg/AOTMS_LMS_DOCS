@@ -5921,28 +5921,56 @@ vercel --prod
             </div>
 
             <p>
-              The project utilizes <strong>Git</strong> for version control to maintain a clean and traceable development history. All code is managed through a structured branching strategy to ensure production stability.
+              The project utilizes <strong>Git</strong> for version control to
+              maintain a clean and traceable development history. All code is
+              managed through a structured branching strategy to ensure
+              production stability.
             </p>
 
             <div class="card-grid">
               <div class="card">
                 <div class="card-title">Main Branch (main)</div>
-                <p style="font-size: 0.85rem">Production-ready code only. All PRs to main must be peer-reviewed and pass full CI tests.</p>
+                <p style="font-size: 0.85rem">
+                  Production-ready code only. All PRs to main must be
+                  peer-reviewed and pass full CI tests.
+                </p>
               </div>
               <div class="card">
                 <div class="card-title">Development Branch (dev)</div>
-                <p style="font-size: 0.85rem">Integration branch for new features before staging. Serves as the primary development trunk.</p>
+                <p style="font-size: 0.85rem">
+                  Integration branch for new features before staging. Serves as
+                  the primary development trunk.
+                </p>
               </div>
               <div class="card">
                 <div class="card-title">Feature Branches</div>
-                <p style="font-size: 0.85rem">Isolated development for specific modules (e.g., <code>feature/ai-quiz-gen</code>). Namespaced by feature.</p>
+                <p style="font-size: 0.85rem">
+                  Isolated development for specific modules (e.g.,
+                  <code>feature/ai-quiz-gen</code>). Namespaced by feature.
+                </p>
               </div>
             </div>
 
-            <div class="callout callout-blue" style="background: var(--blue-pale); border-left: 3px solid var(--blue); padding: 16px; margin-top: 20px;">
-              <span style="font-size: 1.2rem; margin-right: 12px;">🔗</span>
+            <div
+              class="callout callout-blue"
+              style="
+                background: var(--blue-pale);
+                border-left: 3px solid var(--blue);
+                padding: 16px;
+                margin-top: 20px;
+              "
+            >
+              <span style="font-size: 1.2rem; margin-right: 12px">🔗</span>
               <strong>Source Control Link:</strong>
-              <a href="#" style="color: var(--blue); text-decoration: underline; font-family: 'JetBrains Mono', monospace;">[Insert GitHub Repository Link Here]</a>
+              <a
+                href="#"
+                style="
+                  color: var(--blue);
+                  text-decoration: underline;
+                  font-family: &quot;JetBrains Mono&quot;, monospace;
+                "
+                >[Insert GitHub Repository Link Here]</a
+              >
             </div>
           </section>
 
@@ -5954,15 +5982,33 @@ vercel --prod
             </div>
 
             <p>
-              The AOTMS LMS has undergone a comprehensive Quality Assurance (QA) lifecycle to ensure that the platform meets <strong>MNC-grade reliability, security, and performance standards</strong>.
+              The AOTMS LMS has undergone a comprehensive Quality Assurance (QA)
+              lifecycle to ensure that the platform meets
+              <strong
+                >MNC-grade reliability, security, and performance
+                standards</strong
+              >.
             </p>
 
             <h3>19.1 Testing Methodology</h3>
-            <p>We adopted a <strong>Hybrid Agile Testing Approach</strong>, integrating testing into every sprint:</p>
+            <p>
+              We adopted a <strong>Hybrid Agile Testing Approach</strong>,
+              integrating testing into every sprint:
+            </p>
             <ul class="feature-list">
-              <li><strong>Shift-Left Testing:</strong> Developers performing unit tests early in the cycle.</li>
-              <li><strong>Continuous Integration (CI):</strong> Automated linting and test runs on every Pull Request.</li>
-              <li><strong>UAT (User Acceptance Testing):</strong> Validating workflows from the perspectives of Students, Instructors, and Admins.</li>
+              <li>
+                <strong>Shift-Left Testing:</strong> Developers performing unit
+                tests early in the cycle.
+              </li>
+              <li>
+                <strong>Continuous Integration (CI):</strong> Automated linting
+                and test runs on every Pull Request.
+              </li>
+              <li>
+                <strong>UAT (User Acceptance Testing):</strong> Validating
+                workflows from the perspectives of Students, Instructors, and
+                Admins.
+              </li>
             </ul>
 
             <h3>19.2 Test Environment Specifications</h3>
@@ -5981,7 +6027,9 @@ vercel --prod
                   </tr>
                   <tr>
                     <td><strong>Browsers</strong></td>
-                    <td>Chrome (v110+), Firefox (v105+), Safari (v16+), Edge</td>
+                    <td>
+                      Chrome (v110+), Firefox (v105+), Safari (v16+), Edge
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Node Runtime</strong></td>
@@ -5989,7 +6037,10 @@ vercel --prod
                   </tr>
                   <tr>
                     <td><strong>Tools</strong></td>
-                    <td>Vitest (Unit), Postman (API), k6 (Load Testing), OWASP ZAP (Security)</td>
+                    <td>
+                      Vitest (Unit), Postman (API), k6 (Load Testing), OWASP ZAP
+                      (Security)
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Staging URL</strong></td>
@@ -6015,49 +6066,159 @@ vercel --prod
                     <td><strong>Auth</strong></td>
                     <td>Positive</td>
                     <td>Successful login with valid credentials & 2FA.</td>
-                    <td><span class="badge" style="background: #2a7a40; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem;">✅ Passed</span></td>
+                    <td>
+                      <span
+                        class="badge"
+                        style="
+                          background: #2a7a40;
+                          color: white;
+                          padding: 2px 8px;
+                          border-radius: 4px;
+                          font-size: 0.7rem;
+                        "
+                        >✅ Passed</span
+                      >
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Auth</strong></td>
                     <td>Negative</td>
-                    <td>Brute-force detection: Auto-suspension after 3 failures.</td>
-                    <td><span class="badge" style="background: #2a7a40; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem;">✅ Passed</span></td>
+                    <td>
+                      Brute-force detection: Auto-suspension after 3 failures.
+                    </td>
+                    <td>
+                      <span
+                        class="badge"
+                        style="
+                          background: #2a7a40;
+                          color: white;
+                          padding: 2px 8px;
+                          border-radius: 4px;
+                          font-size: 0.7rem;
+                        "
+                        >✅ Passed</span
+                      >
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Admin</strong></td>
                     <td>Functional</td>
-                    <td>Approval of Term 1 payment unlocks corresponding course content.</td>
-                    <td><span class="badge" style="background: #2a7a40; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem;">✅ Passed</span></td>
+                    <td>
+                      Approval of Term 1 payment unlocks corresponding course
+                      content.
+                    </td>
+                    <td>
+                      <span
+                        class="badge"
+                        style="
+                          background: #2a7a40;
+                          color: white;
+                          padding: 2px 8px;
+                          border-radius: 4px;
+                          font-size: 0.7rem;
+                        "
+                        >✅ Passed</span
+                      >
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Instructor</strong></td>
                     <td>Functional</td>
-                    <td>Large MP4 upload (>500MB) to S3 with progress tracking.</td>
-                    <td><span class="badge" style="background: #2a7a40; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem;">✅ Passed</span></td>
+                    <td>
+                      Large MP4 upload (>500MB) to S3 with progress tracking.
+                    </td>
+                    <td>
+                      <span
+                        class="badge"
+                        style="
+                          background: #2a7a40;
+                          color: white;
+                          padding: 2px 8px;
+                          border-radius: 4px;
+                          font-size: 0.7rem;
+                        "
+                        >✅ Passed</span
+                      >
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Student</strong></td>
                     <td>AI Flow</td>
-                    <td>Resume scan extracts text and generates correct ATS score.</td>
-                    <td><span class="badge" style="background: #2a7a40; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem;">✅ Passed</span></td>
+                    <td>
+                      Resume scan extracts text and generates correct ATS score.
+                    </td>
+                    <td>
+                      <span
+                        class="badge"
+                        style="
+                          background: #2a7a40;
+                          color: white;
+                          padding: 2px 8px;
+                          border-radius: 4px;
+                          font-size: 0.7rem;
+                        "
+                        >✅ Passed</span
+                      >
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Exam</strong></td>
                     <td>Security</td>
-                    <td>Tab-switching detection triggers warning during live exam.</td>
-                    <td><span class="badge" style="background: #2a7a40; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem;">✅ Passed</span></td>
+                    <td>
+                      Tab-switching detection triggers warning during live exam.
+                    </td>
+                    <td>
+                      <span
+                        class="badge"
+                        style="
+                          background: #2a7a40;
+                          color: white;
+                          padding: 2px 8px;
+                          border-radius: 4px;
+                          font-size: 0.7rem;
+                        "
+                        >✅ Passed</span
+                      >
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Exam</strong></td>
                     <td>Logic</td>
                     <td>Automated grading of MCQ bank vs source of truth.</td>
-                    <td><span class="badge" style="background: #2a7a40; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem;">✅ Passed</span></td>
+                    <td>
+                      <span
+                        class="badge"
+                        style="
+                          background: #2a7a40;
+                          color: white;
+                          padding: 2px 8px;
+                          border-radius: 4px;
+                          font-size: 0.7rem;
+                        "
+                        >✅ Passed</span
+                      >
+                    </td>
                   </tr>
                   <tr>
                     <td><strong>Zoom</strong></td>
                     <td>Integration</td>
-                    <td>Live class status updates to 'Ended' when Zoom webhook fires.</td>
-                    <td><span class="badge" style="background: #2a7a40; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem;">✅ Passed</span></td>
+                    <td>
+                      Live class status updates to 'Ended' when Zoom webhook
+                      fires.
+                    </td>
+                    <td>
+                      <span
+                        class="badge"
+                        style="
+                          background: #2a7a40;
+                          color: white;
+                          padding: 2px 8px;
+                          border-radius: 4px;
+                          font-size: 0.7rem;
+                        "
+                        >✅ Passed</span
+                      >
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -6067,24 +6228,46 @@ vercel --prod
             <div class="card-grid">
               <div class="card">
                 <div class="card-title">Baseline Load</div>
-                <p><strong>500 concurrent users</strong> simulated with no performance degradation.</p>
+                <p>
+                  <strong>500 concurrent users</strong> simulated with no
+                  performance degradation.
+                </p>
               </div>
               <div class="card">
                 <div class="card-title">Peak Stress</div>
-                <p><strong>2,000 concurrent users</strong> handled with average response time &lt; 800ms.</p>
+                <p>
+                  <strong>2,000 concurrent users</strong> handled with average
+                  response time &lt; 800ms.
+                </p>
               </div>
               <div class="card">
                 <div class="card-title">Database Throughput</div>
-                <p>Optimized indexing handles <strong>50+ queries/second</strong> on the Enrollment collection.</p>
+                <p>
+                  Optimized indexing handles
+                  <strong>50+ queries/second</strong> on the Enrollment
+                  collection.
+                </p>
               </div>
             </div>
 
             <h3>19.5 Security & Vulnerability Assessment</h3>
             <ul class="feature-list">
-              <li><strong>JWT Integrity:</strong> Verified that tampered tokens are rejected by <code>authenticateToken</code>.</li>
-              <li><strong>SQL/NoSQL Injection:</strong> Sanitized all inputs via Mongoose schema-level validation.</li>
-              <li><strong>CORS Policy:</strong> Restricted to approved frontend origins only.</li>
-              <li><strong>XSS Protection:</strong> React-based auto-escaping verified for all dynamic content.</li>
+              <li>
+                <strong>JWT Integrity:</strong> Verified that tampered tokens
+                are rejected by <code>authenticateToken</code>.
+              </li>
+              <li>
+                <strong>SQL/NoSQL Injection:</strong> Sanitized all inputs via
+                Mongoose schema-level validation.
+              </li>
+              <li>
+                <strong>CORS Policy:</strong> Restricted to approved frontend
+                origins only.
+              </li>
+              <li>
+                <strong>XSS Protection:</strong> React-based auto-escaping
+                verified for all dynamic content.
+              </li>
             </ul>
 
             <h3>19.6 Bug Tracking Metrics</h3>
@@ -6115,50 +6298,6 @@ vercel --prod
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </section>
-
-          </section>
-
-          <!-- ════════ SECTION 20: KNOWN ISSUES ════════ -->
-          <section class="section" id="s20">
-            <div class="section-header">
-              <span class="section-num">20</span>
-              <h2>Known Issues & Open Points</h2>
-            </div>
-
-            <div class="callout callout-gold">
-              <span class="callout-icon">⚠️</span>
-              <div class="callout-body">
-                The following technical debt and minor issues are logged for
-                future sprints. The system remains robust and production-ready.
-                These are non-blocking improvements.
-              </div>
-            </div>
-
-            <div class="card">
-              <ul class="feature-list">
-                <li>
-                  <strong>API Auto-Doc:</strong> Due to the highly dynamic
-                  <code>MODEL_MAP</code> generic routes, standard Swagger
-                  auto-generation is partially manual
-                </li>
-                <li>
-                  <strong>PDF Parsing Edge Cases:</strong> Extremely large or
-                  scanned-image-only PDFs may occasionally time out during
-                  extraction (to be addressed with OCR integration)
-                </li>
-                <li>
-                  <strong>Real-time Polling:</strong> Some legacy components
-                  still use short-polling for status checks; slated for
-                  conversion to full WebSocket events
-                </li>
-                <li>
-                  <strong>UI Performance:</strong> Very large course playlists
-                  (&gt;200 items) may require virtualization for smoother
-                  scrolling on low-end mobile devices
-                </li>
-              </ul>
             </div>
           </section>
 
